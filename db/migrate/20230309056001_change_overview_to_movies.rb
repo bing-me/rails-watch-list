@@ -1,4 +1,4 @@
-class ChangeCommentToBookmarks < ActiveRecord::Migration[7.0]
+class ChangeOverviewToMovies < ActiveRecord::Migration[7.0]
   def change
     change_column(:movies, :overview, :text)
   end

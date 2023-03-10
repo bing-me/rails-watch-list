@@ -5,3 +5,5 @@
   <p><%= bookmark.movie %>
   <%= link_to "Delete", bookmark_path(bookmark), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %><p>
 <% end %>
+
+<%= link_to "home", lists_path %>

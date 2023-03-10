@@ -13,6 +13,8 @@ class ListsController < ApplicationController
 
   def create
     @list = List.new(list_params)
+    # raise
+    # authorize @list
     if @list.save
       redirect_to list_path(@list)
     else
